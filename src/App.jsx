@@ -20,10 +20,12 @@ function App() {
         <Button onSelect={() => handleSelect('alltrades')}>All Trades</Button>
         <Button onSelect={() => handleSelect('details')}>Details</Button>
       </div>
-      <Logo />
-      {selectedTopic === 'home' && <Journal />}
-      {selectedTopic === 'alltrades' && <Alltrades />}
-      {selectedTopic === 'details' && <Details />}
+      <div className="container">
+        <Logo />
+        {selectedTopic === 'home' && <Journal />}
+        {selectedTopic === 'alltrades' && <Alltrades />}
+        {selectedTopic === 'details' && <Details />}
+      </div>
     </>
   );
 }
