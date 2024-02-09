@@ -1,7 +1,9 @@
-export default function Button({ children, onSelect }) {
+export default function Button({ children, onSelect, isSelected }) {
   return (
     <li>
-      <button onClick={onSelect}>{children}</button>
+      <button className={isSelected ? 'active' : null} onClick={onSelect}>
+        {children}
+      </button>
     </li>
   );
 }

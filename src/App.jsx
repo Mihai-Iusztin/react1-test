@@ -16,9 +16,24 @@ function App() {
   return (
     <>
       <div className="menu">
-        <Button onSelect={() => handleSelect('home')}>Home</Button>
-        <Button onSelect={() => handleSelect('alltrades')}>All Trades</Button>
-        <Button onSelect={() => handleSelect('details')}>Details</Button>
+        <Button
+          isSelected={selectedTopic === 'home'}
+          onSelect={() => handleSelect('home')}
+        >
+          Home
+        </Button>
+        <Button
+          isSelected={selectedTopic === 'alltrades'}
+          onSelect={() => handleSelect('alltrades')}
+        >
+          All Trades
+        </Button>
+        <Button
+          isSelected={selectedTopic === 'details'}
+          onSelect={() => handleSelect('details')}
+        >
+          Details
+        </Button>
       </div>
       <div className="container">
         <Logo />

@@ -28,6 +28,12 @@ body {
   color: rgb(2, 2, 63);
 }
 
+.menu button.active {
+  background-color: rgb(205, 231, 90);
+  color: rgb(14, 14, 98);
+  font-style: italic;
+}
+
 .menu button:hover {
   border: 1px solid rgb(71, 24, 165);
   background-color: rgb(190, 190, 10);
@@ -119,4 +125,38 @@ tr:nth-child(even) {
 
 tr:hover {
   background-color: rgb(240, 228, 12);
+}
+
+.alltrades-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.trade-container {
+  display: flex;
+  width: 45%;
+  height: 300px;
+  border: 1px solid rgb(2, 2, 63);
+}
+
+.trade-details {
+  flex: 1;
+}
+
+.trade-details li {
+  list-style: none;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 2px 0 3px 0;
+  color: rgb(2, 2, 63);
+}
+
+.trade-container img {
+  flex: 3;
+  width: 500px;
+  height: 300px;
+  object-fit: fill;
 }
